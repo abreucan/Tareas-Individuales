@@ -1,6 +1,5 @@
 package com.company;
 
-import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;
 
 public class Main {
@@ -8,14 +7,15 @@ public class Main {
 
     public static void main(String[] args) {
         //variables
-        String terrenos,departamentos;
-        int actiontaken, propertychoice;
+        int actiontaken, propertychoice, categorychosen;
+        String newTerrenos, newLocales, newDepartamentos;
         System.out.println("*******************************************\n* Bienvenido a la Inmobiliaria HomeFinder *\n*******************************************");
 
         System.out.println("\nPor favor elija una opción: " +
             "\n[1] Conócenos" +
             "\n[2] Ver propiedades disponibles" +
-            "\n[3] Contáctanos");
+            "\n[3] Contáctanos" +
+            "\n[4] Acceso para el personal (registro de viviendas)");
 	    Scanner choice = new Scanner(System.in);
 	    actiontaken = choice.nextByte();
 
@@ -61,6 +61,22 @@ public class Main {
                         "\nCorreo: asistencia@homefinder.pa" +
                         "\nInstagram: @homefinder.pa" +
                         "\n\n¡Gracias por tu confianza!");
+            }
+            case 4 -> {
+                //cambio de información de viviendas
+                System.out.println("Categoría que desea actualizar");
+                System.out.println("\n\n[1] Locales Comerciales" +
+                        "\n[2] Departamentos" +
+                        "\n[3] Terrenos");
+                Scanner catchange = new Scanner(System.in);
+                categorychosen = catchange.nextByte();
+                switch(categorychosen){
+                    case 1 ->{
+                        Scanner newdatalocales = new Scanner(System.in);
+                        Localesdata newinfo = new Localesdata();
+                               newinfo.newLocales = newdatalocales.nextLine();
+                    }
+                }
             }
         }
     }
