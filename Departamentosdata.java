@@ -3,7 +3,7 @@ package com.company;
 public class Departamentosdata {
 
     //variables de la clase
-    String departamentos;
+    String departamentos, newDepartamentos;
 
     // constructor
     // información de los terrenos
@@ -18,6 +18,12 @@ public class Departamentosdata {
     public String getDepartamentos()
     {
         return departamentos;
+    }
+
+    //setter
+    public String setDepartamentos() {
+        this.departamentos = newDepartamentos;
+        return newDepartamentos;
     }
 
 }
