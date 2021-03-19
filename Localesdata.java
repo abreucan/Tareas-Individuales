@@ -3,7 +3,7 @@ package com.company;
 public class Localesdata {
 
     //variables de la clase
-    String locales;
+    String locales, newLocales;
 
     // constructor
     // información de los terrenos
@@ -16,6 +16,12 @@ public class Localesdata {
     public String getLocales()
     {
         return locales;
+    }
+
+    //setter
+    public String setLocales() {
+        this.locales = newLocales;
+        return newLocales;
     }
 
 }
