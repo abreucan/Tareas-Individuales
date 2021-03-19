@@ -3,7 +3,7 @@ package com.company;
 public class Terrenosdata {
 
     //variables de la clase
-    String terrenos;
+    String terrenos, newTerrenos;
 
     // constructor
     // información de los terrenos
@@ -22,5 +22,9 @@ public class Terrenosdata {
         return terrenos;
     }
 
+    //setter
+    public void setTerrenos() {
+        this.terrenos = newTerrenos;
+        return newTerrenos
+    }
 }
-
