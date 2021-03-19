@@ -23,7 +23,7 @@ public class Terrenosdata {
     }
 
     //setter
-    public void setTerrenos() {
+    public String setTerrenos() {
         this.terrenos = newTerrenos;
         return newTerrenos;
     }
