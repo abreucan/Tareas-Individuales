@@ -25,6 +25,6 @@ public class Terrenosdata {
     //setter
     public void setTerrenos() {
         this.terrenos = newTerrenos;
-        return newTerrenos
+        return newTerrenos;
     }
 }
