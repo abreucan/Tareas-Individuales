@@ -76,6 +76,16 @@ public class Main {
                         Localesdata newinfo = new Localesdata();
                                newinfo.newLocales = newdatalocales.nextLine();
                     }
+                    case 2 ->{
+                        Scanner newdatadept = new Scanner(System.in);
+                        Departamentosdata newinfo = new Departamentosdata();
+                        newinfo.newDepartamentos = newdatadept.nextLine();
+                    }
+                    case 3 ->{
+                        Scanner newdataterreno = new Scanner(System.in);
+                        Terrenosdata newinfo = new Terrenosdata();
+                        newinfo.newTerrenos = newdataterreno.nextLine();
+                    }
                 }
             }
         }
